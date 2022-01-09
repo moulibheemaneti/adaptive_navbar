@@ -7,8 +7,6 @@
 
 ![Adaptive Navbar](screenshots/adaptive_navbar.png)
 
-![A small blog related to Adaptive Navbar](https://medium.com/@moulibheemaneti/adaptive-navbar-in-flutter-by-mouli-bheemaneti-46e16b62c400)
-
 ## Table of contents
 * [General info](#general-info)
 * [Setup](#setup)
@@ -48,6 +46,7 @@ This is not the last package from this developer. Maybe this solely can't be upd
 * [Adaptive Navbar Example](https://pub.dev/packages/adaptive_navbar/example)
 * [Adaptive Navbar Installing Guide](https://pub.dev/packages/adaptive_navbar/install)
 * [Adaptive Navbar Release Notes](https://pub.dev/packages/adaptive_navbar/changelog)
+* [Adaptive Navbar Blog](https://medium.com/@moulibheemaneti/adaptive-navbar-in-flutter-by-mouli-bheemaneti-46e16b62c400)
 
 ## Meet the developer
 **Mouli Bheemaneti** is the developer behind this [adaptive_navbar](https://pub.dev/packages/adaptive_navbar) package. I'm ambitious and driven towards developing new apps and packages.
