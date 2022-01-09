@@ -34,7 +34,7 @@ Alternatively, your editor might support or flutter pub get. Check the docs for 
 #### Import it
 Now in your Dart code, you can use:
 ```dart
-import 'package:mb_button/adaptive_navbar.dart';
+import 'package:adaptive_navbar/adaptive_navbar.dart';
 ```
 
 ## Conclusion
