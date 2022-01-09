@@ -5,6 +5,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/moulibheemaneti/adaptive_navbar)](https://github.com/moulibheemaneti/adaptive_navbar/stargazers)
 [![GitHub license](https://img.shields.io/github/license/moulibheemaneti/adaptive_navbar)](https://github.com/moulibheemaneti/adaptive_navbar/blob/master/LICENSE)
 
+![Adaptive Navbar](screenshots/adaptive_navbar.png)
+
 ## Table of contents
 * [General info](#general-info)
 * [Setup](#setup)
