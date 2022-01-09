@@ -29,8 +29,10 @@ $ flutter pub add adaptive_navbar
 This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
 ```yaml
 dependencies:
-  adaptive_navbar: ^0.0.1 #check for latest in versions at https://pub.dev/packages/adaptive_navbar/versions
+  adaptive_navbar: ^0.0.2 #check for latest in versions at https://pub.dev/packages/adaptive_navbar/versions
 ```
+Check for latest in versions at https://pub.dev/packages/adaptive_navbar/versions.
+
 Alternatively, your editor might support or flutter pub get. Check the docs for your editor to learn more.
 
 #### Import it
