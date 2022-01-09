@@ -7,6 +7,8 @@
 
 ![Adaptive Navbar](screenshots/adaptive_navbar.png)
 
+![A small blog related to Adaptive Navbar](https://medium.com/@moulibheemaneti/adaptive-navbar-in-flutter-by-mouli-bheemaneti-46e16b62c400)
+
 ## Table of contents
 * [General info](#general-info)
 * [Setup](#setup)
