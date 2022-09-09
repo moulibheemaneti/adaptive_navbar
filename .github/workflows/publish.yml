@@ -1,4 +1,4 @@
-name: adaptive_navbar
+name: adaptive_navbar workflow
 
 on:
   # release: [published]
@@ -14,11 +14,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout CODE
+      - uses: actions/checkout@v2
       - name: Install Flutter
-        uses: subosito/flutter-action@v1
+        uses: subosito/flutter-action@v2
         with:
-          flutter-version: "1.9.1+hotfix.6"
+          flutter-version: "3.0.5"
       - name: Install dependencies
         run: flutter pub get
       - name: Analyze
