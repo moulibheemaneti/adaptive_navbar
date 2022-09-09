@@ -25,7 +25,7 @@ fi
 
 # Create credentials.json file.
 # cat <<EOF > ~/.pub-cache/credentials.json
-cat <<EOF > ~/Library/Application Support/dart/pub-credentials.json
+cat <<EOF > ~/Library/Application\ Support/dart/pub-credentials.json
 {
   "accessToken":"${PUB_DEV_PUBLISH_ACCESS_TOKEN}",
   "refreshToken":"${PUB_DEV_PUBLISH_REFRESH_TOKEN}",
