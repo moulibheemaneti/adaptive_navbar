@@ -15,7 +15,7 @@
 * [Meet the developer](#meet-the-developer)
 
 ## General info
-**adaptive_navbar** is a third party flutter package. This is adaptive navbar. This can be easily added to your flutter projects. This make your works simpler and your code shorter. This is recently updated and has null safety too. 
+**adaptive_navbar** is a flutter package which helps to create a adaptive navbar which is screen friendly for all the different device aspect ratios. This package can be easily added to your flutter projects. This make your works simpler and your code shorter.
 	
 ## Setup
 These are the steps on how to use this package.

@@ -27,9 +27,11 @@ class NavBarWide extends StatelessWidget {
         child: Row(
           children: List.generate(
             navBarItems.length,
-            (index) => Expanded(
-              child: navBarItems[index],
-            ),
+            (index) {
+              return Expanded(
+                child: navBarItems[index],
+              );
+            },
           ),
         ),
       ),
