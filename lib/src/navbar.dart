@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../src/navbar_item.dart';
-import '../src/navbar_wide.dart';
 import '../src/navbar_small.dart';
+import '../src/navbar_wide.dart';
 
 /// [AdaptiveNavBar] inherits [AppBar].
 ///
@@ -80,14 +80,18 @@ class AdaptiveNavBar extends AppBar {
                         const Text(
                           "MB NavBar",
                           style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 24),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                          ),
                         ),
                   )
                 : title ??
                     const Text(
                       "MB NavBar",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                      ),
                     ),
           ),
           actions: [

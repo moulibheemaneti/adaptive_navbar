@@ -1,4 +1,6 @@
 ## Current release
+## [0.0.3]
+- Updated Documentation.
 
 ## [0.0.2]
 - Properly documented.

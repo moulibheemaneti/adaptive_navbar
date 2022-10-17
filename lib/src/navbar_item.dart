@@ -81,7 +81,11 @@ class _NavBarItemChild extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Center(child: Text(text)),
+      child: Center(
+        child: Text(
+          text,
+        ),
+      ),
     );
   }
 }

@@ -1,5 +1,6 @@
-import '../src/navbar_item.dart';
 import 'package:flutter/material.dart';
+
+import '../src/navbar_item.dart';
 
 /// [NavBarSmall] inherits [StatelessWidget]
 ///
