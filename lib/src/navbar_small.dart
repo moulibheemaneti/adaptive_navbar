@@ -13,9 +13,9 @@ class NavBarSmall extends StatelessWidget {
 
   /// `NavBarSmall`'s named constructor
   const NavBarSmall({
-    Key? key,
+    super.key,
     required this.navBarItems,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

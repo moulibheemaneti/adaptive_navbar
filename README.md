@@ -51,13 +51,10 @@ This is not the last package from this developer. Maybe this solely can't be upd
 * [Adaptive Navbar Blog](https://medium.com/@moulibheemaneti/adaptive-navbar-in-flutter-by-mouli-bheemaneti-46e16b62c400)
 
 ## Meet the developer
-**Mouli Bheemaneti** is the developer behind this [adaptive_navbar](https://pub.dev/packages/adaptive_navbar) package. I'm ambitious and driven towards developing new apps and packages.
-* [Mouli Bheemaneti](https://www.moulibheemaneti.com)
-	* [Play Store](https://play.google.com/store/apps/dev?id=5025838786028729109)
-	* [Github](https://www.github.com/moulibheemaneti)
-	* [Behance](https://www.behance.com/moulibheemaneti)
-	* [Instagram](https://www.instagram.com/mouli.bheemaneti)
-	* [Youtube](https://www.youtube.com/bemouli)
+**Mouli Bheemaneti** is the developer behind this [mb_button](https://pub.dev/packages/mb_button) package. I'm ambitious and driven towards developing new apps and packages.
+* [Mouli Bheemaneti](https://developer.moulibheemaneti.com) 
+	* [Github](https://www.github.com/moulibheemaneti)  
+	* [Behance](https://www.behance.com/moulibheemaneti)  
 
 ## Other packages by this developer
 * [MB Button](https://pub.dev/packages/mb_button)

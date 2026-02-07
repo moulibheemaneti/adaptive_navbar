@@ -11,9 +11,9 @@ class NavBarWide extends StatelessWidget {
 
   /// `NavBarWide`'s named constructor
   const NavBarWide({
-    Key? key,
+    super.key,
     required this.navBarItems,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

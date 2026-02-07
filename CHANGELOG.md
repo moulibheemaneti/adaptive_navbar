@@ -1,4 +1,8 @@
 ## Current release
+
+## [1.0.0]
+- Initial stable release with adaptive navigation bar (menu on narrow screens, full navbar on wide).
+
 ## [0.0.3]
 - Updated Documentation.
 
