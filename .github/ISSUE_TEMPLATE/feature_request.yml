@@ -1,0 +1,47 @@
+name: Feature request
+description: Suggest a new capability or API for adaptive_navbar
+title: "feat: <short description>"
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! Please describe the user-facing problem first, then the proposed API.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What can't you do today, and why does it matter? Avoid jumping to solutions here.
+      placeholder: I can't change the mobile/web breakpoint — it's hardcoded to 800px.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed API
+      description: Sketch the API surface. Dart code blocks are great.
+      render: dart
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What workarounds exist today? Why aren't they enough?
+
+  - type: checkboxes
+    id: breaking
+    attributes:
+      label: Compatibility
+      options:
+        - label: This change would break existing users' code
+        - label: I'd be willing to send a PR for this
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Screenshots, links to similar APIs in other packages, etc.

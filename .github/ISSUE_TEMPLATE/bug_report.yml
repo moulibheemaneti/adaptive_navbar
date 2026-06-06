@@ -1,0 +1,81 @@
+name: Bug report
+description: Report a defect in adaptive_navbar
+title: "bug: <short description>"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug! A complete report is much faster to fix.
+        Please fill in every section — issues missing version info or repro steps will be closed.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the bug.
+      placeholder: When I set screenWidth to 799, the wide layout still rendered…
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: |
+        Paste a minimal `main.dart` (or a link to a gist / repo) that reproduces the issue.
+        Tests are great too.
+      render: dart
+    validations:
+      required: true
+
+  - type: input
+    id: package-version
+    attributes:
+      label: adaptive_navbar version
+      placeholder: "1.0.2"
+    validations:
+      required: true
+
+  - type: textarea
+    id: flutter-doctor
+    attributes:
+      label: Output of `flutter doctor -v`
+      render: shell
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platforms
+    attributes:
+      label: Affected platforms
+      multiple: true
+      options:
+        - Android
+        - iOS
+        - Web
+        - macOS
+        - Windows
+        - Linux
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / stack trace
+      description: Console output, if any. Wrap secrets / personal info.
+      render: shell
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or screen recording
+      description: Drag-and-drop into the editor.
