@@ -1,0 +1,20 @@
+dart_husky:
+  verbose: true
+
+pre-commit:
+  commands:
+    format:
+      run: dart format --set-exit-if-changed .
+      glob: '**/*.dart'
+    analyze:
+      run: flutter analyze .
+      glob: '**/*.dart'
+    test:
+      run: flutter test
+
+commit-msg:
+  commands:
+    conventional:
+      preset: conventional
+      types:
+        append: [wip, release]
