@@ -1,6 +1,6 @@
 name: adaptive_navbar
 
-description: An Adaptive Navigation Bar in flutter. Depending on the screen width, this navbar changes itself into a menu icon in mobile view and navbar in web view.
+description: A responsive Flutter navigation bar that adapts to screen size, rendering as a full navbar on web and desktop and collapsing into a menu drawer on mobile.
 
 version: 1.0.1
 
@@ -10,8 +10,21 @@ homepage: https://github.com/moulibheemaneti/adaptive_navbar.git
 
 repository: https://github.com/moulibheemaneti/adaptive_navbar.git
 
+issue_tracker: https://github.com/moulibheemaneti/adaptive_navbar/issues
+
+topics:
+  - navigation
+  - navbar
+  - responsive
+  - adaptive
+  - widget
+
+screenshots:
+  - description: "Adaptive navbar shown on web (full navbar) and mobile (menu icon) layouts."
+    path: screenshots/adaptive_navbar.png
+
 environment:
-  sdk: ^3.12.0
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -19,6 +32,9 @@ dependencies:
 
 dev_dependencies:
   flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  dart_husky: ^1.2.1
 
 flutter:
   uses-material-design: true
