@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.5](https://github.com/moulibheemaneti/adaptive_navbar/compare/adaptive_navbar-v1.1.4...adaptive_navbar-v1.1.5) (2026-06-21)
+
+
+### Miscellaneous
+
+* bump version to 1.1.4 ([41f49dc](https://github.com/moulibheemaneti/adaptive_navbar/commit/41f49dca6bc8a0b48745a9ad740b31854772fe58))
+* update flutter version to 3.44.2 ([397db97](https://github.com/moulibheemaneti/adaptive_navbar/commit/397db97673ca11c9654769ae7283b2446ec1e6ee))
+* update flutter version to 3.44.2 ([23c54bb](https://github.com/moulibheemaneti/adaptive_navbar/commit/23c54bb3acae528ddaa99b48e9b077a86933698a))
+* update pubspec.lock ([a3cdc59](https://github.com/moulibheemaneti/adaptive_navbar/commit/a3cdc5987854eebdc046f5089e4f6e1004600d99))
+
 ## [1.1.4](https://github.com/moulibheemaneti/adaptive_navbar/compare/adaptive_navbar-v1.1.3...adaptive_navbar-v1.1.4) (2026-06-21)
 
 
