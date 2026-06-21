@@ -20,7 +20,7 @@ jobs:
           channel: stable
 
       - name: Dry run
-        run: flutter pub publish --dry-run
+        run: dart pub publish --dry-run
 
       - name: Publish
-        run: flutter pub publish --force
+        run: dart pub publish --force
