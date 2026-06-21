@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - "adaptive_navbar-v[0-9]+.[0-9]+.[0-9]+"
+  workflow_dispatch:
 
 permissions:
   id-token: write
