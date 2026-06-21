@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1](https://github.com/moulibheemaneti/adaptive_navbar/compare/adaptive_navbar-v1.1.0...adaptive_navbar-v1.1.1) (2026-06-21)
+
+
+### Bug Fixes
+
+* add pub.dev publish workflow ([a06b592](https://github.com/moulibheemaneti/adaptive_navbar/commit/a06b592bad08323b74a31e920deb5b040da49794))
+
 ## [1.1.0](https://github.com/moulibheemaneti/adaptive_navbar/compare/adaptive_navbar-v1.0.3...adaptive_navbar-v1.1.0) (2026-06-21)
 
 
