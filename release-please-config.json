@@ -4,7 +4,18 @@
     ".": {
       "release-type": "dart",
       "package-name": "adaptive_navbar",
-      "changelog-path": "CHANGELOG.md"
+      "changelog-path": "CHANGELOG.md",
+      "changelog-sections": [
+        { "type": "feat",     "section": "Features" },
+        { "type": "fix",      "section": "Bug Fixes" },
+        { "type": "perf",     "section": "Performance" },
+        { "type": "refactor", "section": "Refactors" },
+        { "type": "chore",    "section": "Miscellaneous", "hidden": true },
+        { "type": "docs",     "section": "Documentation", "hidden": true },
+        { "type": "ci",       "section": "CI",            "hidden": true },
+        { "type": "test",     "section": "Tests",         "hidden": true },
+        { "type": "build",    "section": "Build",         "hidden": true }
+      ]
     }
   }
 }
