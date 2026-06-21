@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.2](https://github.com/moulibheemaneti/adaptive_navbar/compare/adaptive_navbar-v1.1.1...adaptive_navbar-v1.1.2) (2026-06-21)
+
+
+### Bug Fixes
+
+* match publish trigger to release-please tag format ([c5d18a6](https://github.com/moulibheemaneti/adaptive_navbar/commit/c5d18a6abb907149bcb63fd2a466ebff55f46bcc))
+* use simple version tag format without component prefix ([bdb7c7a](https://github.com/moulibheemaneti/adaptive_navbar/commit/bdb7c7aa3446f7cd4c34260414db4255b872fbb0))
+
 ## [1.1.1](https://github.com/moulibheemaneti/adaptive_navbar/compare/adaptive_navbar-v1.1.0...adaptive_navbar-v1.1.1) (2026-06-21)
 
 
