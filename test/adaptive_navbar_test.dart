@@ -51,13 +51,10 @@ void main() {
   });
 
   group('AdaptiveNavBar — title', () {
-    testWidgets('falls back to the "MB NavBar" default title', (tester) async {
-      await tester.pumpWidget(
-        _hostWithAppBar(
-          AdaptiveNavBar(screenWidth: 1024, navBarItems: items),
-        ),
-      );
-      expect(find.text('MB NavBar'), findsOneWidget);
+    testWidgets('shows no title when none is provided', (tester) async {
+      final bar = AdaptiveNavBar(screenWidth: 1024, navBarItems: items);
+      await tester.pumpWidget(_hostWithAppBar(bar));
+      expect(bar.title, isNull);
     });
 
     testWidgets('uses the provided title widget when given', (tester) async {

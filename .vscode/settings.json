@@ -1,5 +1,9 @@
 {
   "dart.flutterSdkPath": ".fvm/versions/3.44.1",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "release-please-config.json": ".release-please-manifest.json"
+  },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "Dart-Code.dart-code",
   "files.insertFinalNewline": true,
