@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0](https://github.com/moulibheemaneti/adaptive_navbar/compare/adaptive_navbar-v1.0.3...adaptive_navbar-v1.1.0) (2026-06-21)
+
+
+### Features
+
+* add optional width, alignment, and title parameters ([b50cf39](https://github.com/moulibheemaneti/adaptive_navbar/commit/b50cf39ba32c1a57eb0d23a1bdf376964f1d4eeb))
+* optional title, width & alignment params + release automation ([3f769d5](https://github.com/moulibheemaneti/adaptive_navbar/commit/3f769d53fb9e84649f12e3a809d16537ed228c9d))
+
 ## [1.0.3] - 2026-06-06
 
 ### Added
