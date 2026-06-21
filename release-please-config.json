@@ -4,7 +4,7 @@
 		".": {
 			"release-type": "dart",
 			"package-name": "adaptive_navbar",
-			"include-component-in-tag": false,
+			"include-component-in-tag": true,
 			"changelog-path": "CHANGELOG.md",
 			"changelog-sections": [
 				{ "type": "feat", "section": "Features" },
