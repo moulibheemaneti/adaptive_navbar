@@ -15,9 +15,15 @@ import '../src/navbar_wide.dart';
 ///
 /// `onTitleTapped`
 ///
+/// `titlePadding`
+///
 /// `screenWidth`
 ///
 /// `navBarItems`
+///
+/// `wideNavBarWidthFactor`
+///
+/// `wideNavBarAlignment`
 ///
 class AdaptiveNavBar extends AppBar {
   /// [canTitleGetTapped]
@@ -26,10 +32,16 @@ class AdaptiveNavBar extends AppBar {
   /// [onTitleTapped]
   final void Function()? onTitleTapped;
 
+  /// Padding applied around the title widget.
+  ///
+  /// Defaults to `EdgeInsets.symmetric(horizontal: 20)`.
+  /// Pass [EdgeInsets.zero] to remove padding.
+  final EdgeInsetsGeometry titlePadding;
+
   /// Based on [screenWidth], the 'AdaptiveNavBar' decides
   /// which widget it should be displayed
   ///
-  /// If `screenWidth < 700` it displays [NavBarSmall]
+  /// If `screenWidth < 800` it displays [NavBarSmall]
   /// else it displays [NavBarWide]
   final double? screenWidth;
 
@@ -38,10 +50,23 @@ class AdaptiveNavBar extends AppBar {
   /// The list of navBarItems of type `List<NavBarItem>`
   final List<NavBarItem> navBarItems;
 
+  /// Fraction of screen width used by [NavBarWide].
+  ///
+  /// Defaults to `1/3`. Pass `1.0` to span full screen width.
+  final double wideNavBarWidthFactor;
+
+  /// Alignment of nav items within [NavBarWide].
+  ///
+  /// Defaults to [Alignment.centerRight].
+  final AlignmentGeometry wideNavBarAlignment;
+
   /// `AdaptiveNavBar`'s named constructor
   AdaptiveNavBar({
     this.canTitleGetTapped = false,
     this.onTitleTapped,
+    this.titlePadding = const EdgeInsets.symmetric(horizontal: 20),
+    this.wideNavBarWidthFactor = 1 / 3,
+    this.wideNavBarAlignment = Alignment.centerRight,
     required this.screenWidth,
     required this.navBarItems,
     super.key,
@@ -69,29 +94,17 @@ class AdaptiveNavBar extends AppBar {
     super.titleTextStyle,
     super.systemOverlayStyle,
   }) : super(
-          title: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: canTitleGetTapped
-                ? InkWell(
-                    onTap: onTitleTapped,
-                    child: title ??
-                        const Text(
-                          "MB NavBar",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24,
-                          ),
-                        ),
-                  )
-                : title ??
-                    const Text(
-                      "MB NavBar",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24,
-                      ),
-                    ),
-          ),
+          title: title == null
+              ? null
+              : Padding(
+                  padding: titlePadding,
+                  child: canTitleGetTapped
+                      ? InkWell(
+                          onTap: onTitleTapped,
+                          child: title,
+                        )
+                      : title,
+                ),
           actions: [
             screenWidth! < 800.toDouble()
                 ? NavBarSmall(
@@ -99,6 +112,8 @@ class AdaptiveNavBar extends AppBar {
                   )
                 : NavBarWide(
                     navBarItems: navBarItems,
+                    widthFactor: wideNavBarWidthFactor,
+                    alignment: wideNavBarAlignment,
                   ),
           ],
         );
