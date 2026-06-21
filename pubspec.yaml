@@ -2,7 +2,7 @@ name: adaptive_navbar
 
 description: A responsive Flutter navigation bar that adapts to screen size, rendering as a full navbar on web and desktop and collapsing into a menu drawer on mobile.
 
-version: 1.1.4
+version: 1.1.5
 
 # author: Mouli Bheemaneti <moulibheemaneti99@gmail.com>
 
