@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.3](https://github.com/moulibheemaneti/adaptive_navbar/compare/adaptive_navbar-v1.1.2...adaptive_navbar-v1.1.3) (2026-06-21)
+
+
+### Miscellaneous
+
+* show chore, docs, and ci commits in changelog ([94b3cb8](https://github.com/moulibheemaneti/adaptive_navbar/commit/94b3cb82e309b9a5cf7872a9fe570e5b168e0e2a))
+* update packages and changelog config ([0557e5b](https://github.com/moulibheemaneti/adaptive_navbar/commit/0557e5b0cd65d826143f3b2d0ebc4512e6a86e7b))
+* upgrade dart_husky to 1.2.2 ([6900292](https://github.com/moulibheemaneti/adaptive_navbar/commit/690029262243fe143178381ba7d9c08f96c59d3a))
+
+
+### CI
+
+* add workflow_dispatch to publish workflow ([25b1621](https://github.com/moulibheemaneti/adaptive_navbar/commit/25b1621812344819bc2e52a88bb873636026a9a1))
+* use dart pub publish for oidc compatibility ([51b5576](https://github.com/moulibheemaneti/adaptive_navbar/commit/51b557695dbc690b3f335e48f9fe48d4608ef7b4))
+* use dart-lang reusable publish workflow for oidc ([b163c76](https://github.com/moulibheemaneti/adaptive_navbar/commit/b163c765d8479d40a163de6e11f2e6e1f556ecb9))
+
 ## [1.1.2](https://github.com/moulibheemaneti/adaptive_navbar/compare/adaptive_navbar-v1.1.1...adaptive_navbar-v1.1.2) (2026-06-21)
 
 
