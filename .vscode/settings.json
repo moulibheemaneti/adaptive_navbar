@@ -1,5 +1,5 @@
 {
-  "dart.flutterSdkPath": ".fvm/versions/3.44.2",
+  "dart.flutterSdkPath": ".fvm/versions/3.44.4",
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "release-please-config.json": ".release-please-manifest.json"
