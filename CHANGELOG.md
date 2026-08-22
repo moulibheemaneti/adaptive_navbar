@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0](https://github.com/moulibheemaneti/adaptive_navbar/compare/adaptive_navbar-v1.2.2...adaptive_navbar-v1.3.0) (2026-08-21)
+
+
+### Features
+
+* upgrade flutter sdk to 3.47.1 ([40258c7](https://github.com/moulibheemaneti/adaptive_navbar/commit/40258c7b1d6d90cccf6d07250dd081eb27d82757))
+* upgrade flutter sdk to 3.47.1 ([b76609f](https://github.com/moulibheemaneti/adaptive_navbar/commit/b76609f371ae42194ebb3cd182c3b3fdb4c4d689))
+
+
+### Miscellaneous
+
+* **deps:** update dart_husky to 1.8.0 ([7ed461d](https://github.com/moulibheemaneti/adaptive_navbar/commit/7ed461d618ed677f83f74d92f974dbb2dda53645))
+
 ## [1.2.2](https://github.com/moulibheemaneti/adaptive_navbar/compare/adaptive_navbar-v1.2.1...adaptive_navbar-v1.2.2) (2026-07-18)
 
 
