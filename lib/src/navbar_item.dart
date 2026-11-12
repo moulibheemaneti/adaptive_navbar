@@ -38,9 +38,9 @@ class NavBarItem extends InkWell {
     super.onFocusChange,
     super.autofocus,
   }) : super(
-          child: _NavBarItemChild(text: text),
-          enableFeedback: enableFeedback ?? true,
-        );
+         child: _NavBarItemChild(text: text),
+         enableFeedback: enableFeedback ?? true,
+       );
 }
 
 /// [_NavBarItemChild] is the child of [NavBarItem]
@@ -49,19 +49,13 @@ class _NavBarItemChild extends StatelessWidget {
   final String text;
 
   /// `_NavBarItemChild`'s named constructor
-  const _NavBarItemChild({
-    required this.text,
-  });
+  const _NavBarItemChild({required this.text});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Center(
-        child: Text(
-          text,
-        ),
-      ),
+      child: Center(child: Text(text)),
     );
   }
 }

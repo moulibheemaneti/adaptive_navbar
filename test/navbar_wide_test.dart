@@ -47,10 +47,7 @@ void main() {
       await tester.pumpWidget(_wrap(NavBarWide(navBarItems: items)));
 
       final container = tester.widget<Container>(
-        find.ancestor(
-          of: find.byType(Row),
-          matching: find.byType(Container),
-        ),
+        find.ancestor(of: find.byType(Row), matching: find.byType(Container)),
       );
 
       expect(container.constraints?.maxWidth, 300); // 900 / 3

@@ -2,8 +2,9 @@ import 'package:adaptive_navbar/adaptive_navbar.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-Widget _hostWithAppBar(AdaptiveNavBar appBar) =>
-    MaterialApp(home: Scaffold(appBar: appBar, body: const SizedBox.shrink()));
+Widget _hostWithAppBar(AdaptiveNavBar appBar) => MaterialApp(
+  home: Scaffold(appBar: appBar, body: const SizedBox.shrink()),
+);
 
 void main() {
   final items = <NavBarItem>[
@@ -14,9 +15,7 @@ void main() {
   group('AdaptiveNavBar — adaptive switching', () {
     testWidgets('renders NavBarSmall when screenWidth < 800', (tester) async {
       await tester.pumpWidget(
-        _hostWithAppBar(
-          AdaptiveNavBar(screenWidth: 500, navBarItems: items),
-        ),
+        _hostWithAppBar(AdaptiveNavBar(screenWidth: 500, navBarItems: items)),
       );
 
       expect(find.byType(NavBarSmall), findsOneWidget);
@@ -26,9 +25,7 @@ void main() {
 
     testWidgets('renders NavBarWide when screenWidth >= 800', (tester) async {
       await tester.pumpWidget(
-        _hostWithAppBar(
-          AdaptiveNavBar(screenWidth: 1024, navBarItems: items),
-        ),
+        _hostWithAppBar(AdaptiveNavBar(screenWidth: 1024, navBarItems: items)),
       );
 
       expect(find.byType(NavBarWide), findsOneWidget);
@@ -38,12 +35,11 @@ void main() {
       expect(find.text('About'), findsOneWidget);
     });
 
-    testWidgets('boundary: exactly 800 renders the wide layout',
-        (tester) async {
+    testWidgets('boundary: exactly 800 renders the wide layout', (
+      tester,
+    ) async {
       await tester.pumpWidget(
-        _hostWithAppBar(
-          AdaptiveNavBar(screenWidth: 800, navBarItems: items),
-        ),
+        _hostWithAppBar(AdaptiveNavBar(screenWidth: 800, navBarItems: items)),
       );
       expect(find.byType(NavBarWide), findsOneWidget);
       expect(find.byType(NavBarSmall), findsNothing);
@@ -72,51 +68,55 @@ void main() {
     });
 
     testWidgets(
-        'does not wrap title in InkWell when canTitleGetTapped is false',
-        (tester) async {
-      await tester.pumpWidget(
-        _hostWithAppBar(
-          AdaptiveNavBar(
-            screenWidth: 1024,
-            navBarItems: items,
-            title: const Text('Static'),
+      'does not wrap title in InkWell when canTitleGetTapped is false',
+      (tester) async {
+        await tester.pumpWidget(
+          _hostWithAppBar(
+            AdaptiveNavBar(
+              screenWidth: 1024,
+              navBarItems: items,
+              title: const Text('Static'),
+            ),
           ),
-        ),
-      );
+        );
 
-      final inkWell = find.ancestor(
-        of: find.text('Static'),
-        matching: find.byType(InkWell),
-      );
-      expect(inkWell, findsNothing);
-    });
+        final inkWell = find.ancestor(
+          of: find.text('Static'),
+          matching: find.byType(InkWell),
+        );
+        expect(inkWell, findsNothing);
+      },
+    );
 
     testWidgets(
-        'wraps title in tappable InkWell when canTitleGetTapped is true '
-        'and fires onTitleTapped', (tester) async {
-      var titleTaps = 0;
-      await tester.pumpWidget(
-        _hostWithAppBar(
-          AdaptiveNavBar(
-            screenWidth: 1024,
-            navBarItems: items,
-            title: const Text('Tap Me'),
-            canTitleGetTapped: true,
-            onTitleTapped: () => titleTaps++,
+      'wraps title in tappable InkWell when canTitleGetTapped is true '
+      'and fires onTitleTapped',
+      (tester) async {
+        var titleTaps = 0;
+        await tester.pumpWidget(
+          _hostWithAppBar(
+            AdaptiveNavBar(
+              screenWidth: 1024,
+              navBarItems: items,
+              title: const Text('Tap Me'),
+              canTitleGetTapped: true,
+              onTitleTapped: () => titleTaps++,
+            ),
           ),
-        ),
-      );
+        );
 
-      await tester.tap(find.text('Tap Me'));
-      await tester.pump();
+        await tester.tap(find.text('Tap Me'));
+        await tester.pump();
 
-      expect(titleTaps, 1);
-    });
+        expect(titleTaps, 1);
+      },
+    );
   });
 
   group('AdaptiveNavBar — base AppBar behavior', () {
-    testWidgets('is an AppBar subclass and mounts in the Scaffold',
-        (tester) async {
+    testWidgets('is an AppBar subclass and mounts in the Scaffold', (
+      tester,
+    ) async {
       final bar = AdaptiveNavBar(screenWidth: 1024, navBarItems: items);
       expect(bar, isA<AppBar>());
 
@@ -124,8 +124,9 @@ void main() {
       expect(find.byType(AdaptiveNavBar), findsOneWidget);
     });
 
-    testWidgets('forwards backgroundColor to the underlying AppBar',
-        (tester) async {
+    testWidgets('forwards backgroundColor to the underlying AppBar', (
+      tester,
+    ) async {
       await tester.pumpWidget(
         _hostWithAppBar(
           AdaptiveNavBar(

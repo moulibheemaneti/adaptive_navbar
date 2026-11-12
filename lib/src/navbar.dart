@@ -94,27 +94,22 @@ class AdaptiveNavBar extends AppBar {
     super.titleTextStyle,
     super.systemOverlayStyle,
   }) : super(
-          title: title == null
-              ? null
-              : Padding(
-                  padding: titlePadding,
-                  child: canTitleGetTapped
-                      ? InkWell(
-                          onTap: onTitleTapped,
-                          child: title,
-                        )
-                      : title,
-                ),
-          actions: [
-            screenWidth! < 800.toDouble()
-                ? NavBarSmall(
-                    navBarItems: navBarItems,
-                  )
-                : NavBarWide(
-                    navBarItems: navBarItems,
-                    widthFactor: wideNavBarWidthFactor,
-                    alignment: wideNavBarAlignment,
-                  ),
-          ],
-        );
+         title: title == null
+             ? null
+             : Padding(
+                 padding: titlePadding,
+                 child: canTitleGetTapped
+                     ? InkWell(onTap: onTitleTapped, child: title)
+                     : title,
+               ),
+         actions: [
+           screenWidth! < 800.toDouble()
+               ? NavBarSmall(navBarItems: navBarItems)
+               : NavBarWide(
+                   navBarItems: navBarItems,
+                   widthFactor: wideNavBarWidthFactor,
+                   alignment: wideNavBarAlignment,
+                 ),
+         ],
+       );
 }

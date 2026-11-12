@@ -37,14 +37,9 @@ class NavBarWide extends StatelessWidget {
       child: Align(
         alignment: alignment,
         child: Row(
-          children: List.generate(
-            navBarItems.length,
-            (index) {
-              return Expanded(
-                child: navBarItems[index],
-              );
-            },
-          ),
+          children: List.generate(navBarItems.length, (index) {
+            return Expanded(child: navBarItems[index]);
+          }),
         ),
       ),
     );
