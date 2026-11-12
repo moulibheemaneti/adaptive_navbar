@@ -1,6 +1,5 @@
 import 'package:adaptive_navbar/adaptive_navbar.dart';
-// ignore: deprecated_member_use
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 Widget _wrap(Widget child) => MaterialApp(home: Scaffold(body: child));
@@ -22,8 +21,9 @@ void main() {
       expect(find.text('About'), findsNothing);
     });
 
-    testWidgets('opens a PopupMenu when the menu icon is tapped',
-        (tester) async {
+    testWidgets('opens a PopupMenu when the menu icon is tapped', (
+      tester,
+    ) async {
       await tester.pumpWidget(_wrap(NavBarSmall(navBarItems: items)));
 
       await tester.tap(find.byIcon(Icons.menu));
@@ -45,8 +45,9 @@ void main() {
       expect(find.byType(PopupMenuItem<dynamic>), findsNothing);
     });
 
-    testWidgets('tapping an item inside the menu invokes its onTap',
-        (tester) async {
+    testWidgets('tapping an item inside the menu invokes its onTap', (
+      tester,
+    ) async {
       var taps = 0;
       final tappableItems = [
         NavBarItem(text: 'Home', onTap: () => taps++),

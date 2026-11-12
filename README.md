@@ -29,7 +29,7 @@ $ flutter pub add adaptive_navbar
 This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
 ```yaml
 dependencies:
-  adaptive_navbar: ^0.0.2 #check for latest in versions at https://pub.dev/packages/adaptive_navbar/versions
+  adaptive_navbar: ^2.0.0 #check for latest in versions at https://pub.dev/packages/adaptive_navbar/versions
 ```
 Check for latest in versions at https://pub.dev/packages/adaptive_navbar/versions.
 
@@ -40,6 +40,29 @@ Now in your Dart code, you can use:
 ```dart
 import 'package:adaptive_navbar/adaptive_navbar.dart';
 ```
+
+## Requirements
+
+From 2.0.0, `adaptive_navbar` is built on [`material_ui`](https://pub.dev/packages/material_ui), the standalone Material library that replaces `package:flutter/material.dart`. It needs Flutter 3.47.0 or newer, and your app must use `material_ui` as well. An app still on `package:flutter/material.dart` fails at runtime with errors such as `No MaterialLocalizations found`.
+
+Import Material from `material_ui` in your app:
+
+```dart
+import 'package:material_ui/material_ui.dart';
+```
+
+### Migrating from 1.x
+
+1. Upgrade to Flutter 3.47.0 or newer.
+2. Move your app to `material_ui`. The official fix adds the dependency and rewrites your `package:flutter/material.dart` imports:
+
+   ```sh
+   dart fix --apply --code=migrate_design_widgets
+   ```
+
+3. The `AdaptiveNavBar` and `NavBarItem` APIs are unchanged; they now come from `material_ui`'s `AppBar` and `InkWell`, so they pick up your `material_ui` theme.
+
+If your app has to stay on `package:flutter/material.dart` for now, keep using `adaptive_navbar` 1.x.
 
 ## Conclusion
 This is not the last package from this developer. Maybe this solely can't be updated frequently but still it is worth using this package. This helps to reduce your code lines.
