@@ -1,5 +1,4 @@
-// ignore: deprecated_member_use
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../src/navbar_item.dart';
 
@@ -38,14 +37,9 @@ class NavBarWide extends StatelessWidget {
       child: Align(
         alignment: alignment,
         child: Row(
-          children: List.generate(
-            navBarItems.length,
-            (index) {
-              return Expanded(
-                child: navBarItems[index],
-              );
-            },
-          ),
+          children: List.generate(navBarItems.length, (index) {
+            return Expanded(child: navBarItems[index]);
+          }),
         ),
       ),
     );

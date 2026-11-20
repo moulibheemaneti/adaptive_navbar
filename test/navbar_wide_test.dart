@@ -1,6 +1,5 @@
 import 'package:adaptive_navbar/adaptive_navbar.dart';
-// ignore: deprecated_member_use
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 Widget _wrap(Widget child) => MaterialApp(home: Scaffold(body: child));
@@ -48,10 +47,7 @@ void main() {
       await tester.pumpWidget(_wrap(NavBarWide(navBarItems: items)));
 
       final container = tester.widget<Container>(
-        find.ancestor(
-          of: find.byType(Row),
-          matching: find.byType(Container),
-        ),
+        find.ancestor(of: find.byType(Row), matching: find.byType(Container)),
       );
 
       expect(container.constraints?.maxWidth, 300); // 900 / 3
